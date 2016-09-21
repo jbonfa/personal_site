@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+<!--################################################################################################-->
+    <head>
+     <meta charset="UTF-8">
+ 
+      <title>Jo&atilde;o Bonf&aacute;</title>     
+      <link rel="shortcut icon" href="images/jbonfa.ico">
+
+      <!-- #### IMPORTANDO o jQuery #############################################################-->    
+      <script src="js/jquery-3.1.0.min.js"></script>
+
+      <!-- MEUS ESTILOS -->
+      <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+    </head>
+<!--################################################################################################-->
+
+    <body>
+
+      <!-- BigVideo Dependencies -->
+      <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+      <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+      <script src="bower_components/video-js/video.js"></script>
+
+      <!-- BigVideo -->
+      <script src="bower_components/BigVideo/lib/bigvideo.js"></script>
+
+      <!-- VIDEO BACKGROUND -->
+      <script>
+        $(function() {
+          var BV = new $.BigVideo({useFlashForFirefox:false});
+          BV.init();
+          BV.show([
+            { type: "video/mp4",  src: "video/Crownd.mp4" },
+            { type: "video/webm", src: "video/Crownd.webm" }
+          ],{ambient:true});
+        });
+      </script>
+
+
+    </body>
+  </html>

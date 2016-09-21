@@ -1,0 +1,248 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+<!--################################################################################################-->
+    <head>
+      <meta charset="UTF-8">
+      <title>Jo&atilde;o Bonf&aacute;</title>     
+      <link rel="shortcut icon" href="images/jbonfa.ico">
+      <!-- #### IMPORTANDO o jQuery #############################################################-->    
+      <script src="js/jquery-3.1.0.min.js"></script>
+      <!-- IMPORTANDO o MATERIALIZE -->
+      <link rel="stylesheet" href="/css/materialize.css">
+      <script src="js/materialize.js"></script>
+
+      <!-- SOCIAL TAB -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+      <script src="js/socialbars.js" type="text/javascript"></script>
+
+<!-- MEUS ESTILOS -->
+      <link rel="stylesheet" href="css/style.css" type="text/css"/>
+		  <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+      <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		  <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+    </head>
+ <!--################################################################################################-->
+
+    <body>
+        
+<!-- ############### VIDEO BACKGROUND  ############################################-->
+      <!-- BigVideo Dependencies -->
+      <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+      <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+      <script src="bower_components/video-js/video.js"></script>
+
+      <!-- BigVideo -->
+      <script src="bower_components/BigVideo/lib/bigvideo.js"></script>
+
+      <!-- VIDEO BACKGROUND -->
+      <script>
+        $(function() {
+          var BV = new $.BigVideo({useFlashForFirefox:false});
+          BV.init();
+          BV.show([
+            { type: "video/mp4",  src: "video/eletric.mp4" },
+            { type: "video/webm", src: "video/Crownd.webm" }
+          ],{ambient:true});
+        });
+      </script>
+
+
+
+      <!--div class="video-container">
+        <video autoplay loop muted poster="images/Crownd.jpg" id="video-bg">
+                <source src="video/Crownd.webm" type="video/webm"> 
+                <source src="video/Crownd.mp4"  type="video/mp4">
+        </video>
+      </div-->
+<!-- ##############################################################################-->
+
+      <!-- SOCIAL TAB -->
+      <div id="socialside"></div>
+      <div class="jquery-script-ads">
+        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+      </div>
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+
+<!-- ############### MENU DE NAVEGAÇÃO ############################################-->
+          <nav>
+            <ul>
+              <li><a href="index.html">Jo&atilde;o Bonf&aacute;</a></li>
+              <li>
+                <a href="#">Aquariofilia <span class="caret"></span></a>
+                <div>
+                  <ul>
+                    <li><a href="aqua_foto.html">Fotos</a></li>
+                    <li><a href="aqua_blog.html">Blog</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Inform&aacute;tica <span class="caret"></span></a>
+                <div>
+                  <ul>
+                    <li><a href="info_sig.html">SIG</a></li>
+                    <li><a href="info_web.html">Web Design</a></li>
+                    <li><a href="info_includ.html">Inclus&atilde;o</a></li>
+                    <li><a href="info_blog.html">Blog</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">M&uacute;sica <span class="caret"></span></a>
+                <div>
+                  <ul>
+                    <li><a href="mus_bio.html">Biografia</a></li>
+                    <li><a href="mus_disco.html">Discografia</a></li>
+                    <li><a href="mus_foto.html">Fotos</a></li>
+                    <li><a href="mus_release.html">Release</a></li>
+                    <li><a href="mus_video.html">Videos</a></li>
+                  </ul>
+                </div>
+              </li> 
+              <li>
+                <a href="#">Shopping <span class="caret"></span></a>
+                <div>
+                  <ul>
+                    <li><a href="shop_brecho.html">Brech&oacute; Virtual</a></li>
+                    <li><a href="shop_jumellu.html">Jumellu Roupas</a></li>
+                  </ul>
+                </div>
+              </li> 
+              <li>
+                <a href="contato.html">Contato</a>
+              </li>
+
+            </ul>
+          </nav>
+
+		<!-- NOVO CARROSSEL -->
+		<ul id="sb-slider" class="sb-slider">
+			<li><a href="index.html" target="_blank"><img src="galerias/carrossel/1.jpg" alt="image1"/></a>
+				<div class="sb-description"><h3>Bem-vindo ao site pessoal de Jo&atilde;o Bonf&aacute;</h3></div>
+			</li>
+			<li><a href="aqua_blog.html" target="_blank"><img src="galerias/carrossel/2.jpg" alt="image2"/></a>
+				<div class="sb-description"><h3>Aquariofilia</h3></div>
+			</li>
+			<li><a href="info_web.html" target="_blank"><img src="galerias/carrossel/3.jpg" alt="image3"/></a>
+				<div class="sb-description"><h3>Web Design</h3></div>
+			</li>
+			<li><a href="info_includ.html" target="_blank"><img src="galerias/carrossel/5.jpg" alt="image5"/></a>
+				<div class="sb-description"><h3>Inclus&atilde;o digital</h3></div>
+			</li>
+      <li><a href="info_sig.html" target="_blank"><img src="galerias/carrossel/6.jpg" alt="image6"/></a>
+        <div class="sb-description"><h3>SIG - Smallworld</h3></div>
+      </li>
+      <li><a href="mus_bio.html" target="_blank"><img src="galerias/carrossel/4.jpg" alt="image4"/></a>
+        <div class="sb-description"><h3>M&uacute;sica</h3></div>
+      </li>
+      <li><a href="shop_jumellu.html" target="_blank"><img src="galerias/carrossel/7.jpg" alt="image7"/></a>
+        <div class="sb-description"><h3>Shopping Virtual - JUMELLU</h3></div>
+      </li>
+		</ul>
+
+		<div id="shadow" class="shadow"></div>
+
+		<div id="nav-arrows" class="nav-arrows">
+			<!--a href="#">Next</a>
+			<a href="#">Previous</a-->
+		</div>
+
+		<div id="nav-options" class="nav-options">
+			<!--span id="navPlay">Play</span>
+			<span id="navPause">Pause</span-->
+		</div>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$navOptions = $( '#nav-options' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$navOptions.show();
+								$shadow.show();
+
+							},
+							orientation : 'h',
+							cuboidsCount : 3
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+							$( '#navPlay' ).on( 'click', function() {
+								
+								slicebox.play();
+								return false;
+
+							} );
+
+							$( '#navPause' ).on( 'click', function() {
+								
+								slicebox.pause();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+
+    </body>
+<!--##############################################################################-->
+
+
+
+<!--#################################################################################################-->
+    <footer>
+      <audio volume="0.2" autoplay="true" loop="loop">
+        <source src="audio/Loop_cose_della_vitta.mp3" type="audio/mpeg">
+      </audio>
+    </footer>
+  </html>
+        

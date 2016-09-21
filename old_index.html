@@ -1,0 +1,151 @@
+ <!DOCTYPE html>
+  <html lang="pt-BR">
+<!--################################################################################################-->
+    <head>
+      <meta charset="latin1">
+      <title>Jo&atilde;o Bonf&aacute;</title>     
+      <link rel="shortcut icon" href="images/jbonfa.ico">
+      <!-- #### IMPORTANDO o jQuery #############################################################-->    
+      <script src="js/jquery-3.1.0.min.js"></script>
+      <!-- IMPORTANDO o MATERIALIZE -->
+      <link rel="stylesheet" href="/css/materialize.css">
+      <script src="js/materialize.js"></script>
+
+      
+      <!-- SOCIAL TAB -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+      <script src="js/socialbars.js" type="text/javascript"></script>
+
+  <!-- #### SCRIPT do CARROSSEL ######### -->
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+          setInterval(function(){
+            $('#carrossel ul').animate({marginLeft:'-600px'},2000,function() {
+              /* stuff to do after animation is complete */
+              $(this).find("li:last").after($(this).find("li:first"));
+              $(this).css({marginLeft:0});
+            });
+          },4000);
+
+        });
+      </script>
+
+<!-- MEUS ESTILOS -->
+      <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+    </head>
+<!--################################################################################################-->
+
+    <body>
+          
+<!-- ############### VIDEO BACKGROUND  ############################################-->
+          <div class="video-container">
+            <video autoplay loop muted poster="images/Crownd.jpg" id="video-bg">
+                    <source src="video/Crownd.webm" type="video/webm"> 
+                    <source src="video/Crownd.mp4"  type="video/mp4">
+            </video>
+          </div>
+<!-- ##############################################################################-->
+
+
+      <!-- SOCIAL TAB -->
+      <div id="socialside"></div>
+      <div class="jquery-script-ads">
+        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+      </div>
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+
+<!-- ############### MENU DE NAVEGAÇÃO ############################################-->
+          <nav>
+            <ul>
+              <li><a href="index.html">Jo&atilde;o Bonf&aacute;</a></li>
+              <li>
+                <a href="#">Aquariofilia <span class="caret"></span></a>
+                <div>
+                  <ul>
+                    <li><a href="aqua_foto.html">Fotos</a></li>
+                    <li><a href="aqua_blog.html">Blog</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Inform&aacute;tica <span class="caret"></span></a>
+                <div>
+                  <ul>
+                    <li><a href="info_sig.html">SIG</a></li>
+                    <li><a href="info_web.html">Web Design</a></li>
+                    <li><a href="info_includ.html">Inclus&atilde;o</a></li>
+                    <li><a href="info_blog.html">Blog</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">M&uacute;sica <span class="caret"></span></a>
+                <div>
+                  <ul>
+                    <li><a href="mus_bio.html">Biografia</a></li>
+                    <li><a href="mus_disco.html">Discografia</a></li>
+                    <li><a href="mus_foto.html">Fotos</a></li>
+                    <li><a href="mus_release.html">Release</a></li>
+                    <li><a href="mus_video.html">Videos</a></li>
+                  </ul>
+                </div>
+              </li> 
+              <li>
+                <a href="#">Shopping <span class="caret"></span></a>
+                <div>
+                  <ul>
+                    <li><a href="shop_brecho.html">Brech&oacute; Virtual</a></li>
+                    <li><a href="shop_jumellu.html">Jumellu Roupas</a></li>
+                  </ul>
+                </div>
+              </li> 
+              <li>
+                <a href="contato.html">Contato</a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+<!--##############################################################################-->
+
+
+  <!-- ############ CARROSSEL ###################-->
+      <div id="main">
+        <div id="carrossel">
+          <ul>
+            <li><img src="galerias/carrossel/1.jpg"></li>
+            <li><img src="galerias/carrossel/2.jpg"></li>
+            <li><img src="galerias/carrossel/3.jpg"></li>
+            <li><img src="galerias/carrossel/4.jpg"></li>
+            <li><img src="galerias/carrossel/5.jpg"></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </body>
+<!--#################################################################################################-->
+
+    <footer>
+      <audio volume="0.2" autoplay="true" loop="loop">
+        <source src="audio/Loop_cose_della_vitta.mp3" type="audio/mpeg">
+      </audio>
+    </footer>
+  </html>
+        
